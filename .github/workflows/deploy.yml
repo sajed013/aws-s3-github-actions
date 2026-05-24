@@ -24,8 +24,9 @@ jobs:
           aws-region: ap-south-1
 
       - name: Terraform Init
+        working-directory: ./terraform
         run: terraform init
-
+      
       - name: Terraform Formate
         run: terraform fmt
    
@@ -33,6 +34,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan
+        working-directory: ./terraform
         run: terraform plan
 
       - name: Terraform Apply
