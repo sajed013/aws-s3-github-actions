@@ -32,9 +32,7 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
-      - name: Terraform Plan
-        working-directory: ./terraform
-        run: terraform plan
+     
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
