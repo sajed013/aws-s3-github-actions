@@ -24,7 +24,6 @@ jobs:
           aws-region: ap-south-1
 
       - name: Terraform Init
-        working-directory: ./terraform
         run: terraform init
       
       - name: Terraform Formate
